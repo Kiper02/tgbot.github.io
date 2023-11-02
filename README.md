@@ -7,8 +7,14 @@
 <body>
     <h1>Магазин обуви</h1>
     <script>
-        var WebApp = window.Telegram.WebApp;
-        WebApp.showAlert('Добро пожаловать, @${WebAppUser.username}.');
+        let tg = window.Telegram.WebApp;
+        tg.ThemeParams.bg_color
+        tg.ThemeParams.text_color
+        tg.ThemeParams.hint_color
+        tg.ThemeParams.link_color
+        tg.ThemeParams.button_color
+        tg.ThemeParams.button_text_colorString  
+
 
     </script>
 </body>
