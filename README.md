@@ -6,14 +6,25 @@
 </head>
 <body>
     <h1>Магазин обуви</h1>
+    <div id="usercard">
+
+    </div>
+    <p>Just text</p>
+    <a class="link" href="https://mihailgok.ru">Link</a>
+    <p class="hint">Some little hint</p>
+    <button id="btn" class="button">Show/Hide Main Button</button>
+    <button id="btnED" class="button">Enable/Disable Main Button</button>
     <script>
         let tg = window.Telegram.WebApp;
-        tg.ThemeParams.bg_color
-        tg.ThemeParams.text_color
-        tg.ThemeParams.hint_color
-        tg.ThemeParams.link_color
-        tg.ThemeParams.button_color
-        tg.ThemeParams.button_text_colorString  
+        tg.expand();
+
+        tg.MainButton.text = "Changed Text";
+        tg.MainButton.setText("Changed Text1");
+        tg.MainButton.textColor = "#F55353";
+        tg.MainButton.color = "#143F6B";
+        tg.MainButton.setParams({"color":"#143F6B"})
+
+        
 
 
     </script>
